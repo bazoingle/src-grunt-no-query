@@ -8,9 +8,9 @@ h1,
 h2,
 h3,
 h4 {
-  color: $secondary-color !important;
+  color: $primary-color !important;
   font-family: $font-stack;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.2em;
   margin: 0;
   Margin-bottom: ($padding / 2);
@@ -22,14 +22,14 @@ h1 {
 }
 h2 {
   font-size: 27px;
-  color: $primary-color !important; 
+  color: $secondary-color !important; 
 }
 h3 {
   font-size: 23px;
 }
 h4 {
   font-size: 18px;
-  font-weight:500;
+  font-weight: 800;
 }
 
 p,
@@ -77,8 +77,8 @@ hr {
 hr.style-one {    
     border: 0;
     height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, $primary-color, #ccc);
+    background: $grey;
+    background-image: linear-gradient(to right, #cccccc, $grey, #cccccc);
     }
 
 blockquote {

@@ -2,7 +2,7 @@
     RESPONSIVE AND MOBILE FRIENDLY STYLES
 ------------------------------------- */
 
-/* Tuts Plus Media Queries */
+/* Tuts Plus Media Queries  - added right/left-sidebar-2 classes*/
 
 @media screen and (max-width: 400px) {
     .two-column .column,
@@ -14,6 +14,25 @@
     }
     .three-column img {
         max-width: 50% !important;
+    }
+    .right-sidebar-2 .img {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: auto !important;
+    }
+    .right-sidebar-2 .contents {
+        font-size: $font-size !important;
+        text-align: center !important;
+    }
+    .left-sidebar-2 .img {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: auto !important;
+    }
+
+    .left-sidebar-2 .contents {
+        font-size: $font-size !important;
+        text-align: center !important;
     }
 }
 
@@ -31,7 +50,7 @@
 @media only screen and (max-width: $width) {
         // Type
         h1, h2, h3, h4 {
-            font-weight: 600 !important;
+            font-weight: 500 !important;
         }
         h1 {
             font-size: 28px !important;
@@ -85,7 +104,7 @@
     @font-face {
         font-family: 'ProximaNova';
         src: url("https://www.icracked.com/public/fonts/proximaNova-normal.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-normal.ttf") format("truetype");
-        font-weight: normal;
+        font-weight: 500;
         font-style: normal;
     }
     @font-face {

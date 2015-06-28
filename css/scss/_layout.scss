@@ -2,7 +2,6 @@
     Layout Features No Query
 ------------------------------------- */
 /* No Query Layout Styles */
-
 /*One column layout*/
 
 .one-column .contents {
@@ -12,6 +11,37 @@
 .one-column p {
     font-size: $font-size;
     Margin-bottom: $padding;
+}
+/*Might be unnecessary*/
+.one-column h1,
+h2,
+h3,
+h4 {
+    color: $primary-color !important;
+    font-family: $font-stack;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin: 0;
+    Margin-bottom: ($padding / 2);
+    Margin-top: $padding;
+}
+
+h1 {
+    font-size: 37px;
+}
+
+h2 {
+    font-size: 27px;
+    color: $secondary-color !important;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 800;
 }
 
 /*Two column layout*/
@@ -42,7 +72,6 @@
 .two-column .text {
     padding-top: $padding;
 }
-
 /*Three column layout*/
 
 .three-column {
@@ -73,7 +102,6 @@
 .three-column .text {
     padding-top: $padding;
 }
-
 /* Left sidebar layout */
 
 .left-sidebar {
@@ -109,7 +137,6 @@
 .left-sidebar a {
     color: $primary-color;
 }
-
 /* Right sidebar with large image layout */
 
 .left-sidebar-2 {
@@ -133,19 +160,18 @@
 
 .left-sidebar-2 .img {
     width: 100%;
-    max-width: 80px;
+    max-width: 280px;
     height: auto;
 }
 
 .left-sidebar-2 .contents {
     font-size: $font-size;
-    text-align: center;
+    text-align: left;
 }
 
 .left-sidebar-2 a {
     color: $primary-color;
 }
-
 /* Right sidebar layout */
 
 .right-sidebar {
@@ -181,7 +207,6 @@
 .right-sidebar a {
     color: $primary-color;
 }
-
 /* Right sidebar with large image layout */
 
 .right-sidebar-2 {
@@ -211,7 +236,7 @@
 
 .right-sidebar-2 .contents {
     font-size: $font-size;
-    text-align: center;
+    text-align: left;
 }
 
 .right-sidebar-2 a {
