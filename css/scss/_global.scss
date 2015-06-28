@@ -1,0 +1,73 @@
+/* -------------------------------------
+    Basics 
+------------------------------------- */
+/* No Query Global Styles */
+
+body {
+    Margin: 0;
+    padding: 0;
+    min-width: 100%;
+    background-color: $bg;
+    font-family: $font-stack;
+    font-size: $font-size;
+    line-height: 1.6em;
+}
+
+table {
+    border-spacing: 0;
+    font-family: $font-stack;
+    color: $font-color;
+}
+
+td {
+    padding: 0;
+}
+
+img {
+    border: 0;
+    color: $secondary-color;
+    font-family: $font-stack;
+    font-size: $font-size;
+}
+
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.webkit {
+    max-width: $width;
+}
+
+.outer {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: $width;
+}
+
+// Added 2x sides padding - $padding ($padding * 2)
+.inner {
+    padding: $padding ($padding * 2); 
+}
+
+.contents {
+    width: 100%;
+}
+
+/* Grunt Workflow Outlook.com Fix (trying this - may delete)*/
+
+// External class fix for Outlook.com
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}

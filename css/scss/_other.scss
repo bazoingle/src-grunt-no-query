@@ -1,0 +1,73 @@
+/* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+
+.full-width-image img {
+    width: 100%;
+    max-width: $width;
+    height: auto;
+}
+
+.header {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: $width;
+    padding: $padding $padding ($padding / 2) $padding;
+    text-align: left !important;
+}
+
+.footer {
+    text-align: center;
+    Margin: 0 auto;
+    width: 100%;
+    max-width: $width;
+    padding: $padding $padding ($padding / 2) $padding;
+    p {
+        font-size: 12px;
+        text-align: center;
+    }
+    a {
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: $primary-color;
+    }
+}
+
+/* Table For Stripe Receipt */
+
+.data-table {
+    Margin-bottom: $padding;
+    text-align: left;
+}
+
+/* Modified Preheader to avoid top padding Gmail App */
+
+.preheader-mc {
+    display: none;
+    font-size: 1px;
+    color: #fefefe;
+    line-height: 1px;
+    font-family: Helvetica, Arial, sans-serif;
+    max-height: 0px;
+    max-width: 0px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* Grunt Workflow Preheader - should be retired */
+
+// Preheader text is displayed in certain clients as a preview but not shown when the user opens the email
+.preheader {
+    color: transparent;
+    display: none;
+    height: 0;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    mso-hide: all;
+    visibility: hidden;
+    width: 0;
+}
+

@@ -1,0 +1,635 @@
+/* -------------------------------------
+    CONFIGURE YOUR VARIABLES
+------------------------------------- */
+/* Colors */
+/* Structure */
+/* Typography */
+/* -------------------------------------
+    Basics 
+------------------------------------- */
+/* No Query Global Styles */
+body {
+  Margin: 0;
+  padding: 0;
+  min-width: 100%;
+  background-color: #ffffff;
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+table {
+  border-spacing: 0;
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif !important;
+  color: #5b6675;
+}
+
+td {
+  padding: 0;
+}
+
+img {
+  border: 0;
+  color: #0c20f5;
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif !important;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+.webkit {
+  max-width: 600px;
+}
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.inner {
+  padding: 10px 20px;
+}
+
+.contents {
+  width: 100%;
+}
+
+/* Grunt Workflow Outlook.com Fix (trying this - may delete)*/
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+/* -------------------------------------
+    Layout Features No Query
+------------------------------------- */
+/* No Query Layout Styles */
+/*One column layout*/
+.one-column .contents {
+  text-align: left;
+}
+
+.one-column p {
+  font-size: 16px;
+  Margin-bottom: 10px;
+}
+
+/*Two column layout*/
+.two-column {
+  text-align: center;
+  font-size: 0;
+}
+
+.two-column .column {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.two-column .contents {
+  font-size: 16px;
+  text-align: left;
+}
+
+.two-column img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.two-column .text {
+  padding-top: 10px;
+}
+
+/*Three column layout*/
+.three-column {
+  text-align: center;
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.three-column .column {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.three-column img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+.three-column .contents {
+  font-size: 16px;
+  text-align: center;
+}
+
+.three-column .text {
+  padding-top: 10px;
+}
+
+/* Left sidebar layout */
+.left-sidebar {
+  text-align: center;
+  font-size: 0;
+}
+
+.left-sidebar .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left-sidebar .left {
+  max-width: 100px;
+}
+
+.left-sidebar .right {
+  max-width: 500px;
+}
+
+.left-sidebar .img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}
+
+.left-sidebar .contents {
+  font-size: 16px;
+  text-align: center;
+}
+
+.left-sidebar a {
+  color: #008ee8;
+}
+
+/* Right sidebar with large image layout */
+.left-sidebar-2 {
+  text-align: center;
+  font-size: 0;
+}
+
+.left-sidebar-2 .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left-sidebar-2 .left {
+  max-width: 300px;
+}
+
+.left-sidebar-2 .right {
+  max-width: 300px;
+}
+
+.left-sidebar-2 .img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}
+
+.left-sidebar-2 .contents {
+  font-size: 16px;
+  text-align: center;
+}
+
+.left-sidebar-2 a {
+  color: #008ee8;
+}
+
+/* Right sidebar layout */
+.right-sidebar {
+  text-align: center;
+  font-size: 0;
+}
+
+.right-sidebar .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right-sidebar .left {
+  max-width: 100px;
+}
+
+.right-sidebar .right {
+  max-width: 500px;
+}
+
+.right-sidebar .img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}
+
+.right-sidebar .contents {
+  font-size: 16px;
+  text-align: center;
+}
+
+.right-sidebar a {
+  color: #008ee8;
+}
+
+/* Right sidebar with large image layout */
+.right-sidebar-2 {
+  text-align: center;
+  font-size: 0;
+}
+
+.right-sidebar-2 .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right-sidebar-2 .left {
+  max-width: 300px;
+}
+
+.right-sidebar-2 .right {
+  max-width: 300px;
+}
+
+.right-sidebar-2 .img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.right-sidebar-2 .contents {
+  font-size: 16px;
+  text-align: center;
+}
+
+.right-sidebar-2 a {
+  color: #008ee8;
+}
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+/* Grunt Workflow Typography */
+h1,
+h2,
+h3,
+h4 {
+  color: #0c20f5 !important;
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif !important;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0;
+  Margin-bottom: 5px;
+  Margin-top: 10px;
+}
+
+h1 {
+  font-size: 37px;
+}
+
+h2 {
+  font-size: 27px;
+  color: #008ee8 !important;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p,
+ul,
+ol {
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif !important;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
+}
+p li,
+ul li,
+ol li {
+  list-style-position: inside;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #008ee8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Modified Zurb Foundation Additions */
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small {
+  color: #0c20f5;
+  font-size: 60%;
+  line-height: 0;
+}
+
+hr {
+  border: solid #0c20f5;
+  border-width: 2px 0 0;
+  clear: both;
+  height: 0;
+  Margin: 20px 0 19px;
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #008ee8, #ccc);
+}
+
+blockquote {
+  Margin: 0 0 20px;
+  padding: 9px 20px 0 19px;
+  border-left: 2px solid white;
+}
+
+blockquote,
+blockquote p {
+  line-height: 1.4em;
+  font-size: 14px;
+  color: #6e7af9;
+}
+
+/* -------------------------------------
+    BUTTONS
+------------------------------------- */
+/* Grunt Workflow Button */
+.btn {
+  margin-bottom: 15px;
+  width: auto;
+  -premailer-width: auto;
+}
+.btn td {
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+}
+.btn a {
+  background-color: #ffffff;
+  border: solid 1px #008ee8;
+  border-radius: 4px;
+  color: #008ee8;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  padding: 12px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn-primary td {
+  background-color: #008ee8;
+}
+.btn-primary a {
+  background-color: #008ee8;
+  border-color: #008ee8;
+  color: #fff;
+}
+
+/* Campaign Monitor Bulletproof Button - Standard & Wide */
+.cm-button a {
+  background-color: #008ee8;
+  border: 1px solid #008ee8;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif !important;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 49px;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+  -webkit-text-size-adjust: none;
+  mso-hide: all;
+}
+
+.cm-button-wide a {
+  background-color: #008ee8;
+  border: 1px solid #008ee8;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif !important;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 49px;
+  text-align: center;
+  text-decoration: none;
+  width: 280px;
+  -webkit-text-size-adjust: none;
+  mso-hide: all;
+}
+
+.cm-button-small a {
+  background-color: #008ee8;
+  border: 1px solid #008ee8;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif !important;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+  -webkit-text-size-adjust: none;
+  mso-hide: all;
+}
+
+/* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+.full-width-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.header {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px 10px 5px 10px;
+  text-align: left !important;
+}
+
+.footer {
+  text-align: center;
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px 10px 5px 10px;
+}
+.footer p {
+  font-size: 12px;
+  text-align: center;
+}
+.footer a {
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #008ee8;
+}
+
+/* Table For Stripe Receipt */
+.data-table {
+  Margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Modified Preheader to avoid top padding Gmail App */
+.preheader-mc {
+  display: none;
+  font-size: 1px;
+  color: #fefefe;
+  line-height: 1px;
+  font-family: Helvetica, Arial, sans-serif;
+  max-height: 0px;
+  max-width: 0px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* Grunt Workflow Preheader - should be retired */
+.preheader {
+  color: transparent;
+  display: none;
+  height: 0;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  mso-hide: all;
+  visibility: hidden;
+  width: 0;
+}
+
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+/* Tuts Plus Media Queries */
+@media screen and (max-width: 400px) {
+  .two-column .column,
+  .three-column .column {
+    max-width: 100% !important;
+  }
+
+  .two-column img {
+    max-width: 100% !important;
+  }
+
+  .three-column img {
+    max-width: 50% !important;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 620px) {
+  .three-column .column {
+    max-width: 33% !important;
+  }
+
+  .two-column .column {
+    max-width: 50% !important;
+  }
+}
+/* Grunt Workflow Media Queries (Had to remove td[class=body], could not figure it out to work ) */
+@media only screen and (max-width: 600px) {
+  h1, h2, h3, h4 {
+    font-weight: 600 !important;
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 21px !important;
+  }
+
+  .btn {
+    width: 90% !important;
+  }
+}
+/* -------------------------------------
+    ICRACKED FONT - PROXIMA NOVA
+------------------------------------- */
+@media screen {
+  @font-face {
+    font-family: 'ProximaNova';
+    src: url("https://www.icracked.com/public/fonts/proximaNova-light.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ProximaNova';
+    src: url("https://www.icracked.com/public/fonts/proximaNova-italic.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-italic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'ProximaNova';
+    src: url("https://www.icracked.com/public/fonts/proximaNova-semi-bold.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-semi-bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ProximaNova';
+    src: url("https://www.icracked.com/public/fonts/proximaNova-normal.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-normal.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ProximaNova';
+    src: url("https://www.icracked.com/public/fonts/proximaNova-normal.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ProximaNova';
+    src: url("https://www.icracked.com/public/fonts/proximaNova-bold.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-bold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

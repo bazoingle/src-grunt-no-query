@@ -1,0 +1,97 @@
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+
+/* Tuts Plus Media Queries */
+
+@media screen and (max-width: 400px) {
+    .two-column .column,
+    .three-column .column {
+        max-width: 100% !important;
+    }
+    .two-column img {
+        max-width: 100% !important;
+    }
+    .three-column img {
+        max-width: 50% !important;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+    .three-column .column {
+        max-width: 33% !important;
+    }
+    .two-column .column {
+        max-width: 50% !important;
+    }
+}
+
+/* Grunt Workflow Media Queries (Had to remove td[class=body], could not figure it out to work ) */
+
+@media only screen and (max-width: $width) {
+        // Type
+        h1, h2, h3, h4 {
+            font-weight: 600 !important;
+        }
+        h1 {
+            font-size: 28px !important;
+        }
+        h2 {
+            font-size: 24px !important;
+        }
+        h3 {
+            font-size: 21px !important;
+        }
+
+        // Buttons
+        .btn {
+            width: 90% !important;
+        }
+    }
+
+
+/* -------------------------------------
+    ICRACKED FONT - PROXIMA NOVA
+------------------------------------- */
+
+@media screen {
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url("https://www.icracked.com/public/fonts/proximaNova-light.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-light.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url("https://www.icracked.com/public/fonts/proximaNova-italic.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-italic.ttf") format("truetype");
+        font-weight: 500;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url("https://www.icracked.com/public/fonts/proximaNova-semi-bold.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-semi-bold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url("https://www.icracked.com/public/fonts/proximaNova-normal.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-normal.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    // Added font-weight: normal to match Litmus email CSS 
+    
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url("https://www.icracked.com/public/fonts/proximaNova-normal.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-normal.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url("https://www.icracked.com/public/fonts/proximaNova-bold.woff") format("woff"), url("https://www.icracked.com/public/fonts/proximaNova-bold.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+    }
+}
